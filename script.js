@@ -128,6 +128,30 @@ revealElements.forEach(element => {
 });
 
 
+/*=============== HAMBURGER MENU TOGGLE ===============*/
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+if (hamburgerMenu && mobileMenu) {
+    hamburgerMenu.addEventListener('click', () => {
+        hamburgerMenu.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        
+        // Toggle body scroll when menu is open
+        document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Close menu when clicking on a mobile nav link
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburgerMenu.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+}
+
 /*=============== INITIALIZATION ON DOM CONTENT LOADED ===============*/
 document.addEventListener('DOMContentLoaded', () => {
     displayCurrentDate(); // Display the date once the DOM is ready
