@@ -67,25 +67,7 @@
   --transition-color: background-color .4s ease, color .4s ease, border-color .4s ease;
 }
 
-/* =============== LIGHT THEME VARIABLES =============== */
-body.light-theme {
-  --bg-color: hsl(var(--hue-color), 40%, 98%);    /* Very light grey/off-white */
-  --bg-color-alt: #ffffff;                     /* White cards */
-  --text-color: hsl(225, 8%, 38%);            /* Darker grey text */
-  --text-color-muted: hsl(225, 8%, 55%);       /* Lighter grey text */
-  --title-color: hsl(225, 12%, 18%);           /* Very dark grey/black title */
-  --border-color: hsl(var(--hue-color), 30%, 88%); /* Light border */
-  --shadow-color: hsla(225, 20%, 60%, 0.1);  /* Subtle light shadow */
-  --card-shadow-hover: hsla(225, 20%, 60%, 0.18);
 
-  --accent-color: hsl(var(--hue-color), 65%, 58%); /* Slightly adjust if needed */
-  --accent-color-alt: hsl(var(--hue-color), 65%, 53%);
-  --accent-gradient: linear-gradient(135deg, hsl(var(--hue-color), 65%, 58%), hsl(var(--hue-color), 65%, 50%));
-  --accent-text-color: #ffffff;                /* Keep button text white */
-
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 92%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-}
 
 
 /*=============== BASE ===============*/

@@ -11,15 +11,7 @@ import '../styles.css';
 library.add(fas, fab);
 
 function App() {
-  const [theme, setTheme] = useState('dark');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  // Theme toggle handler
-  const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark';
-    setTheme(newTheme);
-    localStorage.setItem('selected-theme', newTheme);
-  };
 
   // Mobile menu toggle handler
   const toggleMobileMenu = () => {
@@ -27,13 +19,6 @@ function App() {
   };
 
   // Set initial theme from localStorage
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('selected-theme');
-    if (savedTheme) {
-      setTheme(savedTheme);
-    }
-  }, []);
-
   // Scroll effects and intersection observer
   const headerRef = useRef(null);
   const scrollUpRef = useRef(null);
@@ -105,27 +90,11 @@ function App() {
   }, []);
 
   return (
-    <div className={`app ${theme}-theme`}>
+    <div className="app">
       {/* Date Display */}
       <div className="current-date-display">
         {new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}
       </div>
-
-      {/* Theme Toggle */}
-      <button 
-        id="theme-button" 
-        className="theme-toggle" 
-        onClick={toggleTheme}
-        aria-label="Toggle dark/light theme" 
-        title="Toggle Theme"
-      >
-        <span className="theme-icon-wrapper">
-          <FontAwesomeIcon 
-            icon={theme === 'dark' ? 'sun' : 'moon'} 
-            className="theme-icon" 
-          />
-        </span>
-      </button>
 
       {/* Header */}
       <header className="main-header" ref={headerRef}>
@@ -400,26 +369,7 @@ function App() {
                   </div>
                 </div>
               </article>
-              <article className="project__card card">
-                <div className="project__image-container">
-                  <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" alt="Project 3 Visual" loading="lazy" className="project__image" />
-                  <div className="project__overlay">
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 3 GitHub">
-                      <FontAwesomeIcon icon={['fab', 'github']} />
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 3 Live Demo">
-                      <FontAwesomeIcon icon="external-link-alt" />
-                    </a>
-                  </div>
-                </div>
-                <div className="project__content">
-                  <h3 className="project__title">Next.js Task Manager</h3>
-                  <p className="project__description">Task management concept app built with Next.js, exploring its features for UI development.</p>
-                  <div className="project__tags">
-                    <span>Next.js</span><span>React</span><span>Firebase</span>
-                  </div>
-                </div>
-              </article>
+
             </div>
           </div>
         </section>

@@ -15,36 +15,6 @@ function displayCurrentDate() {
     dateElement.textContent = formattedDate;
 }
 
-/*=============== THEME TOGGLE ===============*/
-const themeButton = document.getElementById('theme-button');
-const lightThemeClass = 'light-theme';
-const sunIcon = themeButton?.querySelector('.theme-icon-sun');
-const moonIcon = themeButton?.querySelector('.theme-icon-moon');
-
-const getCurrentTheme = () => document.body.classList.contains(lightThemeClass) ? 'light' : 'dark';
-
-const applyTheme = (theme) => {
-    if (theme === 'light') {
-        document.body.classList.add(lightThemeClass);
-    } else {
-        document.body.classList.remove(lightThemeClass);
-    }
-    // Icon visibility is handled purely by CSS based on body class
-};
-
-// Apply saved theme or default (dark)
-const savedTheme = localStorage.getItem('selected-theme');
-applyTheme(savedTheme || 'dark'); // Default to dark
-
-// Theme toggle event listener
-if (themeButton) {
-    themeButton.addEventListener('click', () => {
-        const newTheme = getCurrentTheme() === 'light' ? 'dark' : 'light';
-        applyTheme(newTheme);
-        localStorage.setItem('selected-theme', newTheme);
-    });
-}
-
 /*=============== HEADER SCROLL EFFECT & ACTIVE LINK ===============*/
 const header = document.querySelector('.main-header');
 const navLinks = document.querySelectorAll('.nav-link');
