@@ -146,9 +146,9 @@ function App() {
               <h1 className="hero__name">Anshu Prakash Hindoyar</h1>
               <p className="hero__title">Full Stack Developer</p>
               <p className="hero__tagline">
-                Passionate and curious B.Tech student with a knack for building creative tech solutions.
-                Currently exploring full-stack development and AI-driven projects.
+                Passionate and curious 3rd year B.Tech student at Ramaiah Institute of Technology, Bangalore with a knack for building creative tech solutions.
                 Strong foundation in DSA and problem-solving with a growing portfolio of real-world applications.
+                Currently exploring full-stack development and AI-driven projects.
                 Always open to learning, collaborating, and turning ideas into impact.
               </p>
               <div className="hero__links">
