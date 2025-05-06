@@ -188,8 +188,19 @@ function App() {
             <div className="about-content card">
               <h2 className="section__title">About Me</h2>
               <div className="section-divider"></div>
-              <p>I'm a dedicated and detail-oriented Software Development Engineer, currently navigating my third year of Electronics & Telecommunications Engineering at <span className="highlight">Ramaiah Institute of Technology</span>. My core passion lies in the art of building <span className="highlight">robust, scalable, and user-centric software</span>.</p>
-              <p>With practical experience spanning the full stack – from crafting intuitive frontends with <span className="highlight">React & Next.js</span> to architecting efficient backends using <span className="highlight">Node.js and Java/Spring</span> – I possess a versatile skill set complemented by a strong grasp of fundamental concepts like Data Structures and Algorithms. I approach challenges with analytical rigor and thrive in collaborative environments, always striving for impactful, elegant solutions.</p>
+              <p>
+    I’m a passionate and curious developer with strong problem-solving skills, especially in <strong>C++</strong> where I’ve tackled numerous Data Structures and Algorithms challenges on platforms like LeetCode and Codeforces. 
+  </p>
+  <p>
+    My interests go beyond competitive coding—I also build full-stack web applications using the <strong>MERN stack (MongoDB, Express.js, React, Node.js)</strong>.
+  </p>
+  <p>
+    I also have foundational knowledge in <strong>Computer Vision</strong> and <strong>Machine Learning</strong>, having worked with tools like OpenCV and YOLOv8. I enjoy building intelligent systems that blend hardware and software.
+  </p>
+  <p>
+    I’m continuously learning, building, and striving to grow as a developer—excited about both clean code and creative innovation.
+  </p>
+
             </div>
           </div>
         </section>
