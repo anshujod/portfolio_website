@@ -169,7 +169,7 @@ function App() {
                 </a>
               </div>
               <div className="hero__cta">
-                <a href="Anshu_Prakash_Hindoyar_Resume.pdf" target="_blank" className="button button--primary">
+                <a href="resume.pdf" target="_blank" className="button button--primary">
                   <FontAwesomeIcon icon="file-alt" /> View Resume
                 </a>
                 <a href="#projects" className="button button--secondary">Explore Projects</a>
@@ -204,11 +204,11 @@ function App() {
                 <div className="skill__icon"><FontAwesomeIcon icon={['fab', 'react']} /></div>
                 <h3 className="skill__title">Frontend</h3>
                 <ul className="skill__list">
-                  <li>React.js / Next.js</li>
+                  <li>React.js</li>
                   <li>JavaScript (ES6+)</li>
                   <li>HTML5 & CSS3/SCSS</li>
                   <li>Tailwind CSS</li>
-                  <li>State Management</li>
+    
                 </ul>
               </div>
               <div className="skill__card card">
@@ -216,10 +216,9 @@ function App() {
                 <h3 className="skill__title">Backend</h3>
                 <ul className="skill__list">
                   <li>Node.js / Express</li>
-                  <li>Java / Spring Boot</li>
-                  <li>Python (Familiar)</li>
+                  <li>Java </li>
+                  <li>Python </li>
                   <li>RESTful APIs</li>
-                  <li>Microservice Concepts</li>
                 </ul>
               </div>
               <div className="skill__card card">
@@ -229,7 +228,6 @@ function App() {
                   <li>MongoDB</li>
                   <li>MySQL</li>
                   <li>SQL / NoSQL</li>
-                  <li>Database Design</li>
                 </ul>
               </div>
               <div className="skill__card card">
@@ -249,9 +247,7 @@ function App() {
                 <ul className="skill__list">
                   <li>Git & GitHub</li>
                   <li>Docker</li>
-                  <li>AWS (Basics)</li>
-                  <li>CI/CD Concepts</li>
-                  <li>Testing (Unit/Integration)</li>
+                  <li>Vercel</li>
                 </ul>
               </div>
               <div className="skill__card card">
@@ -262,7 +258,6 @@ function App() {
                   <li>Algorithms</li>
                   <li>OOP Principles</li>
                   <li>Problem Solving</li>
-                  <li>Agile Methodologies</li>
                 </ul>
               </div>
             </div>
@@ -312,12 +307,12 @@ function App() {
             <div className="section-divider"></div>
             <div className="achievements__grid">
               <div className="achievement__card card">
-                <h3>Web3 Hackathon Winner</h3>
-                <p>Won first prize in national Web3 hackathon for innovative blockchain solution</p>
+                <h3>Capture the Flag 3rd position</h3>
+                <p>Secured 3rd position in Capture the Flag organised by Google Developers Students Club (GDSC) RIT.</p>
               </div>
               <div className="achievement__card card">
-                <h3>Prime Minister's Recognition</h3>
-                <p>Recognized by Prime Minister of India for outstanding technical contributions</p>
+                <h3>RIT Techfest AAVISHKAAR 1st position</h3>
+                <p>Secured 1st postion in the event organised by Medical Electronics in RIT Techfest-AAVISHKAR 2025.</p>
               </div>
             </div>
           </div>
@@ -333,7 +328,7 @@ function App() {
                 <div className="project__image-container">
                   <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Project 1 Visual" loading="lazy" className="project__image" />
                   <div className="project__overlay">
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 1 GitHub">
+                    <a href="https://github.com/anshujod/expensetracker.git" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 1 GitHub">
                       <FontAwesomeIcon icon={['fab', 'github']} />
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 1 Live Demo">
@@ -342,10 +337,10 @@ function App() {
                   </div>
                 </div>
                 <div className="project__content">
-                  <h3 className="project__title">Sudoku Solver & Visualizer</h3>
-                  <p className="project__description">Web application implementing recursive backtracking to solve Sudoku puzzles, with visualization.</p>
+                  <h3 className="project__title">Expense Tracker</h3>
+                  <p className="project__description">A full-stack web application to manage daily expenses. Users can securely log in, add income and expenses, view transaction history, and track their financial balance in real time — all with an intuitive and responsive UI.</p>
                   <div className="project__tags">
-                    <span>JavaScript</span><span>HTML/CSS</span><span>Node.js</span>
+                    <span>JavaScript</span><span>HTML/CSS</span><span>Node.js</span><span>MongoDB</span><span>React</span>
                   </div>
                 </div>
               </article>
@@ -353,7 +348,7 @@ function App() {
                 <div className="project__image-container">
                   <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Project 2 Visual" loading="lazy" className="project__image" />
                   <div className="project__overlay">
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 2 GitHub">
+                    <a href="https://github.com/anshujod/blog_app.git" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 2 GitHub">
                       <FontAwesomeIcon icon={['fab', 'github']} />
                     </a>
                     <a href="#" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 2 Live Demo">
@@ -362,10 +357,10 @@ function App() {
                   </div>
                 </div>
                 <div className="project__content">
-                  <h3 className="project__title">MERN E-commerce Platform</h3>
-                  <p className="project__description">Conceptual full-stack e-commerce site demonstrating MERN stack proficiency and Tailwind CSS styling.</p>
+                  <h3 className="project__title">Blog App</h3>
+                  <p className="project__description">A full-stack Blog Web Application that allows users to create, read, update, and delete blog posts. It features secure user authentication, protected routes, rich-text blog content, and responsive design.</p>
                   <div className="project__tags">
-                    <span>React</span><span>Node.js</span><span>MongoDB</span><span>Tailwind</span>
+                    <span>React</span><span>Node.js</span><span>MongoDB</span><span>Javascript</span><span>HTML/CSS</span>
                   </div>
                 </div>
               </article>
