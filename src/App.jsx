@@ -158,7 +158,7 @@ function App() {
                 <a href="https://github.com/anshujod/" target="_blank" rel="noopener noreferrer" className="hero__link" aria-label="GitHub" title="GitHub">
                   <FontAwesomeIcon icon={['fab', 'github']} />
                 </a>
-                <a href="https://leetcode.com/u/cyphered_anshu/" target="_blank" rel="noopener noreferrer" className="hero__link" aria-label="LeetCode" title="LeetCode">
+                <a href="https://leetcode.com/u/anshujod/" target="_blank" rel="noopener noreferrer" className="hero__link" aria-label="LeetCode" title="LeetCode">
                   <FontAwesomeIcon icon="code" />
                 </a>
                 <a href="https://www.instagram.com/_anshuprakash_21_/" target="_blank" rel="noopener noreferrer" className="hero__link" aria-label="Instagram" title="Instagram">
