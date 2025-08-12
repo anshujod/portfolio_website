@@ -146,7 +146,7 @@ function App() {
               <h1 className="hero__name">Anshu Prakash Hindoyar</h1>
               <p className="hero__title">Full Stack Developer</p>
               <p className="hero__tagline">
-                Passionate and curious 3rd year B.Tech student at Ramaiah Institute of Technology, Bangalore with a knack for building creative tech solutions.
+                Passionate and curious Final year B.Tech student at Ramaiah Institute of Technology, Bangalore with a knack for building creative tech solutions.
                 Strong foundation in DSA and problem-solving with a growing portfolio of real-world applications.
                 Currently exploring full-stack development and AI-driven projects.
                 Always open to learning, collaborating, and turning ideas into impact.
@@ -169,7 +169,7 @@ function App() {
                 </a>
               </div>
               <div className="hero__cta">
-                <a href="resume.pdf" target="_blank" className="button button--primary">
+                <a href="anshu_final.pdf" target="_blank" className="button button--primary">
                   <FontAwesomeIcon icon="file-alt" /> View Resume
                 </a>
                 <a href="#projects" className="button button--secondary">Explore Projects</a>
@@ -245,7 +245,6 @@ function App() {
                 <div className="skill__icon"><FontAwesomeIcon icon="code" /></div>
                 <h3 className="skill__title">Languages</h3>
                 <ul className="skill__list">
-                  <li>Java</li>
                   <li>JavaScript</li>
                   <li>C++ / C</li>
                   <li>Python</li>
@@ -259,6 +258,17 @@ function App() {
                   <li>Git & GitHub</li>
                   <li>Docker</li>
                   <li>Vercel</li>
+                </ul>
+              </div>
+              <div className="skill__card card">
+                <div className="skill__icon"><FontAwesomeIcon icon="robot" /></div>
+                <h3 className="skill__title">ML & Computer-Vision</h3>
+                <ul className="skill__list">
+                  <li>OpenCV</li>
+                  <li>Keras</li>
+                  <li>NumPy</li>
+                  <li>TensorFlow</li>
+                  <li>Yolo-V8</li>
                 </ul>
               </div>
               <div className="skill__card card">
@@ -342,9 +352,6 @@ function App() {
                     <a href="https://github.com/anshujod/expensetracker.git" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 1 GitHub">
                       <FontAwesomeIcon icon={['fab', 'github']} />
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 1 Live Demo">
-                      <FontAwesomeIcon icon="external-link-alt" />
-                    </a>
                   </div>
                 </div>
                 <div className="project__content">
@@ -359,19 +366,33 @@ function App() {
                 <div className="project__image-container">
                   <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Project 2 Visual" loading="lazy" className="project__image" />
                   <div className="project__overlay">
-                    <a href="https://github.com/anshujod/blog_app.git" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 2 GitHub">
+                    <a href="https://github.com/anshujod/brain_tumour_detection.git" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 2 GitHub">
                       <FontAwesomeIcon icon={['fab', 'github']} />
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 2 Live Demo">
-                      <FontAwesomeIcon icon="external-link-alt" />
                     </a>
                   </div>
                 </div>
                 <div className="project__content">
-                  <h3 className="project__title">Blog App</h3>
-                  <p className="project__description">A full-stack Blog Web Application that allows users to create, read, update, and delete blog posts. It features secure user authentication, protected routes, rich-text blog content, and responsive design.</p>
+                  <h3 className="project__title">Brain Tumor Detection using CNN</h3>
+                  <p className="project__description">Developed a deep learning model to classify brain tumors from MRI scans using a custom CNN in TensorFlow/Keras. Fine-tuned with data augmentation and class weighting, improving tumor detection recall and overall model reliability.</p>
                   <div className="project__tags">
-                    <span>React</span><span>Node.js</span><span>MongoDB</span><span>Javascript</span><span>HTML/CSS</span>
+                    <span>OpenCV</span><span>Keras</span><span>NumPy</span><span>TensorFlow</span><span>Scikit-Learn</span>
+                  </div>
+                </div>
+              </article>
+              <article className="project__card card">
+                <div className="project__image-container">
+                  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Smart Wearable Visual" loading="lazy" className="project__image" />
+                  <div className="project__overlay">
+                    <a href="#" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Smart Wearable GitHub">
+                      <FontAwesomeIcon icon={['fab', 'github']} />
+                    </a>
+                  </div>
+                </div>
+                <div className="project__content">
+                  <h3 className="project__title">Smart Wearable for elderly and kids</h3>
+                  <p className="project__description">An IoT-based wearable device with fall detection and emergency alert system for elderly and children's safety. Uses accelerometer data to detect falls and sends alerts via SMS/email to caregivers.</p>
+                  <div className="project__tags">
+                    <span>Arduino Uno</span><span>Raspberry Pi</span><span>Node-RED</span><span>IoT Sensors</span>
                   </div>
                 </div>
               </article>
