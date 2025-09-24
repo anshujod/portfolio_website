@@ -169,7 +169,7 @@ function App() {
                 </a>
               </div>
               <div className="hero__cta">
-                <a href="anshu_final.pdf" target="_blank" className="button button--primary">
+                <a href="Anshu_resume_latest.pdf" target="_blank" className="button button--primary">
                   <FontAwesomeIcon icon="file-alt" /> View Resume
                 </a>
                 <a href="#projects" className="button button--secondary">Explore Projects</a>
@@ -217,7 +217,7 @@ function App() {
                 <ul className="skill__list">
                   <li>React.js</li>
                   <li>JavaScript (ES6+)</li>
-                  <li>HTML5 & CSS3/SCSS</li>
+                  <li>HTML5 & CSS3</li>
                   <li>Tailwind CSS</li>
     
                 </ul>
@@ -237,8 +237,7 @@ function App() {
                 <h3 className="skill__title">Databases</h3>
                 <ul className="skill__list">
                   <li>MongoDB</li>
-                  <li>MySQL</li>
-                  <li>SQL / NoSQL</li>
+                  <li>SQL</li>
                 </ul>
               </div>
               <div className="skill__card card">
@@ -256,8 +255,9 @@ function App() {
                 <h3 className="skill__title">Tools & DevOps</h3>
                 <ul className="skill__list">
                   <li>Git & GitHub</li>
-                  <li>Docker</li>
+                  <li>Visual Studio Code</li>
                   <li>Vercel</li>
+                  <li>Postman</li>
                 </ul>
               </div>
               <div className="skill__card card">
@@ -335,6 +335,12 @@ function App() {
                 <h3>RIT Techfest AAVISHKAAR 1st position</h3>
                 <p>Secured 1st postion in the event organised by Medical Electronics in RIT Techfest-AAVISHKAR 2025.</p>
               </div>
+              <div className="achievement__card card">
+                <h3>Problem solving enthusiast</h3>
+                <p>
+                  Solved 300+ problems on platforms like LeetCode, Codeforces and Geek for Geeks honing my algorithmic thinking and coding skills.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -366,16 +372,17 @@ function App() {
                 <div className="project__image-container">
                   <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Project 2 Visual" loading="lazy" className="project__image" />
                   <div className="project__overlay">
-                    <a href="https://github.com/anshujod/brain_tumour_detection.git" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 2 GitHub">
+                    <a href="https://github.com/anshujod/mern_authenticator.git" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 2 GitHub">
                       <FontAwesomeIcon icon={['fab', 'github']} />
                     </a>
                   </div>
                 </div>
                 <div className="project__content">
-                  <h3 className="project__title">Brain Tumor Detection using CNN</h3>
-                  <p className="project__description">Developed a deep learning model to classify brain tumors from MRI scans using a custom CNN in TensorFlow/Keras. Fine-tuned with data augmentation and class weighting, improving tumor detection recall and overall model reliability.</p>
+                  <h3 className="project__title">MERN Authentication System</h3>
+                  <p className="project__description">Developed RESTful APIs with Node.js, Express, and MongoDB for user authentication workflows including signup, login,
+                  email verification, password reset, and logout.</p>
                   <div className="project__tags">
-                    <span>OpenCV</span><span>Keras</span><span>NumPy</span><span>TensorFlow</span><span>Scikit-Learn</span>
+                    <span>Javascript</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Mailtrap</span>
                   </div>
                 </div>
               </article>
