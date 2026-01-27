@@ -99,8 +99,8 @@ function App() {
       {/* Header */}
       <header className="main-header" ref={headerRef}>
         <nav className="container header-nav">
-          <button 
-            className={`hamburger-menu ${mobileMenuOpen ? 'active' : ''}`} 
+          <button
+            className={`hamburger-menu ${mobileMenuOpen ? 'active' : ''}`}
             onClick={toggleMobileMenu}
             aria-label="Toggle navigation menu"
           >
@@ -169,7 +169,7 @@ function App() {
                 </a>
               </div>
               <div className="hero__cta">
-                <a href="Anshu_resume_latest.pdf" target="_blank" className="button button--primary">
+                <a href="Anshu_Resume_SWE.pdf" target="_blank" className="button button--primary">
                   <FontAwesomeIcon icon="file-alt" /> View Resume
                 </a>
                 <a href="#projects" className="button button--secondary">Explore Projects</a>
@@ -181,7 +181,7 @@ function App() {
           </a>
         </section>
 
-  
+
         {/* About Section */}
         <section id="about" className="about section">
           <div className="container about-container">
@@ -189,17 +189,17 @@ function App() {
               <h2 className="section__title">About Me</h2>
               <div className="section-divider"></div>
               <p>
-    I’m a passionate and curious developer with strong problem-solving skills, especially in <strong>C++</strong> where I’ve tackled numerous Data Structures and Algorithms challenges on platforms like LeetCode and Codeforces. 
-  </p>
-  <p>
-    My interests go beyond competitive coding—I also build full-stack web applications using the <strong>MERN stack (MongoDB, Express.js, React, Node.js)</strong>.
-  </p>
-  <p>
-    I also have foundational knowledge in <strong>Computer Vision</strong> and <strong>Machine Learning</strong>, having worked with tools like OpenCV and YOLOv8. I enjoy building intelligent systems that blend hardware and software.
-  </p>
-  <p>
-    I’m continuously learning, building, and striving to grow as a developer—excited about both clean code and creative innovation.
-  </p>
+                I’m a passionate and curious developer with strong problem-solving skills, especially in <strong>C++</strong> where I’ve tackled numerous Data Structures and Algorithms challenges on platforms like LeetCode and Codeforces.
+              </p>
+              <p>
+                My interests go beyond competitive coding—I also build full-stack web applications using the <strong>MERN stack (MongoDB, Express.js, React, Node.js)</strong>.
+              </p>
+              <p>
+                I also have foundational knowledge in <strong>Computer Vision</strong> and <strong>Machine Learning</strong>, having worked with tools like OpenCV and YOLOv8. I enjoy building intelligent systems that blend hardware and software.
+              </p>
+              <p>
+                I’m continuously learning, building, and striving to grow as a developer—excited about both clean code and creative innovation.
+              </p>
 
             </div>
           </div>
@@ -219,7 +219,7 @@ function App() {
                   <li>JavaScript (ES6+)</li>
                   <li>HTML5 & CSS3</li>
                   <li>Tailwind CSS</li>
-    
+
                 </ul>
               </div>
               <div className="skill__card card">
@@ -238,6 +238,8 @@ function App() {
                 <ul className="skill__list">
                   <li>MongoDB</li>
                   <li>SQL</li>
+                  <li>Supabase</li>
+                  <li>PostgreSQL</li>
                 </ul>
               </div>
               <div className="skill__card card">
@@ -258,6 +260,7 @@ function App() {
                   <li>Visual Studio Code</li>
                   <li>Vercel</li>
                   <li>Postman</li>
+                  <li>AWS S3</li>
                 </ul>
               </div>
               <div className="skill__card card">
@@ -353,6 +356,61 @@ function App() {
             <div className="projects__grid">
               <article className="project__card card">
                 <div className="project__image-container">
+                  <img src="https://images.unsplash.com/photo-1611606063065-ee7946f0787a?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="Chatify Visual" loading="lazy" className="project__image" />
+                  <div className="project__overlay">
+                    <a href="https://chatify-app-a66h.onrender.com/" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Chatify Live Demo" title="Live Demo">
+                      <FontAwesomeIcon icon="external-link-alt" />
+                    </a>
+                    <a href="https://github.com/anshujod/Chat_App" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Chatify GitHub" title="GitHub">
+                      <FontAwesomeIcon icon={['fab', 'github']} />
+                    </a>
+                  </div>
+                </div>
+                <div className="project__content">
+                  <h3 className="project__title">Chatify - A Messaging App</h3>
+                  <p className="project__description">A messaging platform built using the MERN stack with a focus on secure and scalable communication. Features real-time chat with Socket.IO, secure backend with JWT & Arcjet, and optimized state management using Zustand.</p>
+                  <div className="project__tags">
+                    <span>MERN</span><span>Socket.IO</span><span>JWT</span><span>Zustand</span><span>Arcjet</span>
+                  </div>
+                </div>
+              </article>
+              <article className="project__card card">
+                <div className="project__image-container">
+                  <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=870&q=80" alt="AI ThumbnailGen Visual" loading="lazy" className="project__image" />
+                  <div className="project__overlay">
+                    <a href="https://github.com/anshujod/AI_thumbnail" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="AI ThumbnailGen GitHub">
+                      <FontAwesomeIcon icon={['fab', 'github']} />
+                    </a>
+                  </div>
+                </div>
+                <div className="project__content">
+                  <h3 className="project__title">AI ThumbnailGen</h3>
+                  <p className="project__description">A SaaS application that uses AI to create thumbnails based on video concepts. Integrates OpenAI DALL·E 3, AWS S3, Supabase, and Razorpay for a complete credit-based system.</p>
+                  <div className="project__tags">
+                    <span>React</span><span>OpenAI</span><span>AWS S3</span><span>Supabase</span><span>Razorpay</span>
+                  </div>
+                </div>
+              </article>
+              <article className="project__card card">
+                <div className="project__image-container">
+                  <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Project 2 Visual" loading="lazy" className="project__image" />
+                  <div className="project__overlay">
+                    <a href="https://github.com/anshujod/mern_auth.git" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 2 GitHub">
+                      <FontAwesomeIcon icon={['fab', 'github']} />
+                    </a>
+                  </div>
+                </div>
+                <div className="project__content">
+                  <h3 className="project__title">MERN Authentication System</h3>
+                  <p className="project__description">Developed RESTful APIs with Node.js, Express, and MongoDB for user authentication workflows including signup, login,
+                    email verification, password reset, and logout.</p>
+                  <div className="project__tags">
+                    <span>Javascript</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Mailtrap</span>
+                  </div>
+                </div>
+              </article>
+              <article className="project__card card">
+                <div className="project__image-container">
                   <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Project 1 Visual" loading="lazy" className="project__image" />
                   <div className="project__overlay">
                     <a href="https://github.com/anshujod/expensetracker.git" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 1 GitHub">
@@ -365,41 +423,6 @@ function App() {
                   <p className="project__description">A full-stack web application to manage daily expenses. Users can securely log in, add income and expenses, view transaction history, and track their financial balance in real time — all with an intuitive and responsive UI.</p>
                   <div className="project__tags">
                     <span>JavaScript</span><span>HTML/CSS</span><span>Node.js</span><span>MongoDB</span><span>React</span>
-                  </div>
-                </div>
-              </article>
-              <article className="project__card card">
-                <div className="project__image-container">
-                  <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Project 2 Visual" loading="lazy" className="project__image" />
-                  <div className="project__overlay">
-                    <a href="https://github.com/anshujod/mern_authenticator.git" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Project 2 GitHub">
-                      <FontAwesomeIcon icon={['fab', 'github']} />
-                    </a>
-                  </div>
-                </div>
-                <div className="project__content">
-                  <h3 className="project__title">MERN Authentication System</h3>
-                  <p className="project__description">Developed RESTful APIs with Node.js, Express, and MongoDB for user authentication workflows including signup, login,
-                  email verification, password reset, and logout.</p>
-                  <div className="project__tags">
-                    <span>Javascript</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Mailtrap</span>
-                  </div>
-                </div>
-              </article>
-              <article className="project__card card">
-                <div className="project__image-container">
-                  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Smart Wearable Visual" loading="lazy" className="project__image" />
-                  <div className="project__overlay">
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="project__icon-link" aria-label="Smart Wearable GitHub">
-                      <FontAwesomeIcon icon={['fab', 'github']} />
-                    </a>
-                  </div>
-                </div>
-                <div className="project__content">
-                  <h3 className="project__title">Smart Wearable for elderly and kids</h3>
-                  <p className="project__description">An IoT-based wearable device with fall detection and emergency alert system for elderly and children's safety. Uses accelerometer data to detect falls and sends alerts via SMS/email to caregivers.</p>
-                  <div className="project__tags">
-                    <span>Arduino Uno</span><span>Raspberry Pi</span><span>Node-RED</span><span>IoT Sensors</span>
                   </div>
                 </div>
               </article>
@@ -443,19 +466,19 @@ function App() {
           </div>
         </footer>
       </div>
-        {/* Scroll Up Button */}
-        <a href="#"
-           className="scrollup"
-           id="scroll-up"
-           aria-label="Scroll to top"
-           title="Scroll to top"
-           ref={scrollUpRef}
-           onClick={(e) => {
-             e.preventDefault();
-             window.scrollTo({ top: 0, behavior: 'smooth' });
-           }}>
-          <FontAwesomeIcon icon="chevron-up" />
-        </a>
+      {/* Scroll Up Button */}
+      <a href="#"
+        className="scrollup"
+        id="scroll-up"
+        aria-label="Scroll to top"
+        title="Scroll to top"
+        ref={scrollUpRef}
+        onClick={(e) => {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}>
+        <FontAwesomeIcon icon="chevron-up" />
+      </a>
     </div>
   );
 }
