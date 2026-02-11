@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import anshuImage from '../anshu.png';
+import anshuImage from '../anshu_dp.png';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
